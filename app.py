@@ -7,22 +7,28 @@ app = Flask(__name__)
 
 # Scelton of the page
 
-# Main index page
+# Login page
 @app.route("/")
-def home():
+def login():
     return render_template(
-        "home.html"
+        "login.html"
     )
 
-# About page
-@app.route("/about/")
+# Admin page
+@app.route("/admin/")
 def about():
-    return render_template("about.html")
+    return render_template("admin.html")
+
+# Changeps page
+@app.route("/changeps/")
+def changeps():
+    # TODO
+    return render_template("login.html")
 
 
-# Contact page
-@app.route(("/contact/"))
-def contact():
-    return render_template("contact.html")
-
+# Changeps page
+@app.route("/logout/")
+def logout():
+    # TODO
+    return render_template("login.html")
 

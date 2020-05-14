@@ -32,3 +32,9 @@ def logout():
     # TODO
     return render_template("login.html")
 
+
+# Changeps page
+@app.route("/ledger/")
+def ledger():
+    # TODO
+    return render_template("ledger.html")

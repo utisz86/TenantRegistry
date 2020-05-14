@@ -7,8 +7,12 @@
     </head>
 
     <body>
-        {% block navbartype %}
-        {% endblock %}
+        <div class="navbar">
+            <a href="/changeps" class="navbar-item">Change password</a>
+            {% block navbartype %}
+            {% endblock %}
+        </div>
+
 
         <div class="body-content">
             {% block content %}
